@@ -10,6 +10,8 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
+    if y == 0:
+        return "Error: Division by zero"
     return x / y
 
 def exponent(x, y):
@@ -39,7 +41,11 @@ def main():
     elif choice == '3':
         print(num1, "*", num2, "=", multiply(num1, num2))
     elif choice == '4':
-        print(num1, "/", num2, "=", divide(num1, num2))
+        result = divide(num1, num2)
+        if isinstance(result, str):
+            print(result)
+        else:
+            print(num1, "/", num2, "=", result)
     elif choice == '5':
         print(num1, "to the power of ", num2, "=", exponent(num1, num2))
     else:
