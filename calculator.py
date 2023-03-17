@@ -1,3 +1,5 @@
+#define the 4 arithmetic operations, add/subtract/multiply/divide
+
 def add(x, y):
     return x + y
 
@@ -9,6 +11,10 @@ def multiply(x, y):
 
 def divide(x, y):
     return x / y
+
+#guide user choice towards one of the 4 operations
+#capture that choice and then seek the desired input of num1 & num2 from the user to perform the next operation
+#if/else statement prints the numbers being used (num1, num2), the operation being performed, and the resultant
 
 def main():
     print("Select operation:")
@@ -32,6 +38,8 @@ def main():
         print(num1, "/", num2, "=", divide(num1, num2))
     else:
         print("Invalid input")
+
+#i have not seen this before in my learning material but apparently this line allows the script to be run as a standalone program
 
 if __name__ == "__main__":
     main()
