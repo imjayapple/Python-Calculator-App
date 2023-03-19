@@ -28,6 +28,7 @@ def main():
     print("3. Multiply")
     print("4. Divide")
     print("5. Exponent")
+    print("6. Percent")
 
     choice = input("Enter your choice (1/2/3/4/5): ")
 
@@ -48,6 +49,8 @@ def main():
             print(num1, "/", num2, "=", result)
     elif choice == '5':
         print(num1, "to the power of ", num2, "=", exponent(num1, num2))
+    elif choice == '6':
+        print(num1, "% of ", num2, "=",  )
     else:
         print("Invalid input")
 
