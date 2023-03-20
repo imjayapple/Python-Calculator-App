@@ -17,6 +17,9 @@ def divide(x, y):
 def exponent(x, y):
     return x ** y
 
+def percent(x, y):
+    return (x / y) * 100
+
 #guide user choice towards one of the 4 operations
 #capture that choice and then seek the desired input of num1 & num2 from the user to perform the next operation
 #if/else statement prints the numbers being used (num1, num2), the operation being performed, and the resultant
