@@ -35,7 +35,7 @@ def main():
 
     choice = input("Enter your choice (1/2/3/4/5/6): ")
 
-    num1 = float(input("Enter first number: "))
+    num1 = float(input("Enter your first number: "))
     num2 = float(input("Enter your second number: "))
 
     if choice == '1':
