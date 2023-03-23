@@ -32,8 +32,9 @@ def main():
     print("4. Divide")
     print("5. Exponent")
     print("6. Percent")
+    print("7. Square Root")
 
-    choice = input("Enter your choice (1/2/3/4/5/6): ")
+    choice = input("Enter your choice (1/2/3/4/5/6/7): ")
 
     num1 = float(input("Enter your first number: "))
     num2 = float(input("Enter your second number: "))
@@ -54,6 +55,8 @@ def main():
         print(num1, "to the power of ", num2, "=", exponent(num1, num2))
     elif choice == '6':
         print(num1, "% of ", num2, "=", percent(num1, num2))
+    elif choice == '7':
+        print(num1
     else:
         print("Invalid input")
 
